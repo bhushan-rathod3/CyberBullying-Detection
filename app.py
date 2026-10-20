@@ -4,7 +4,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the pre-trained model ONCE when the server boots up (Instant load)
-MODEL_PATH = "model.joblib"
+MODEL_PATH = "model2.joblib"
 model = joblib.load(MODEL_PATH)
 
 
