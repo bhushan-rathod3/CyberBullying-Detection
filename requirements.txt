@@ -1,0 +1,16 @@
+# Multi-Class Cyberbullying Detection
+# Python 3.11. scikit-learn must be exactly 1.2.2 to load model2.joblib.
+# The other pins are versions that are compatible with scikit-learn 1.2.2 and Python 3.11.
+scikit-learn==1.2.2
+numpy==1.24.4
+scipy==1.10.1
+pandas==2.0.3
+joblib==1.2.0
+matplotlib==3.7.5
+seaborn==0.12.2
+wordcloud==1.9.2
+nltk==3.8.1
+Pillow==10.0.1
+Flask==2.3.3
+Werkzeug==2.3.8
+notebook==7.0.6

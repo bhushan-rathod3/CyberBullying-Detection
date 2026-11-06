@@ -1,3 +1,10 @@
+# How to run:
+
+1. Install Python 3.11 and the packages in requirements.txt (pip install -r requirements.txt); scikit-learn must be version 1.2.2 to load the saved model.
+2. Download cyberbullying_tweets.csv from Kaggle (reference [11]) and place it in the project folder.
+3. Run the notebooks in this order to repeat the analysis: data_analysis.ipynb, experiment.ipynb, trial.ipynb (the last one saves model2.joblib). python train.py runs the script version of the training pipeline.
+4. Start the demo: python app.py and open http://127.0.0.1:5000 in a browser.
+
 # Multi-Class Cyberbullying Detection
 
 A six-class text classifier (age, ethnicity, gender, religion, other_cyberbullying, not_cyberbullying) built with TF-IDF and Logistic Regression, with calibrated confidence, word-level explanations, an "unsure" option and a Flask web demo. The public Kaggle cyberbullying dataset gives high scores, but a data audit showed conflicting labels, keyword shortcuts and a narrow "harmless" class, so the project also measures how far those scores can be trusted: the model is tested on a hand-labelled gold set of real tweets and on an external dataset, and the headline accuracy (about 0.87) is reported next to the real-tweet accuracy (about 0.78) and the false-alarm rate on ordinary tweets (65%, reduced to 24%).
@@ -187,10 +194,6 @@ The first gold set had to be corrected: about half of its tweets were also in th
 10. F. Pedregosa et al., "Scikit-learn: machine learning in Python," _Journal of Machine Learning Research_, 12, 2825-2830, 2011.
 11. "Cyberbullying Classification" dataset, Kaggle, user andrewmvd: https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification
 
-## License
-
-[Add a license, for example MIT, and a `LICENSE` file before publishing.]
-
 ## Acknowledgement
 
-Guided by [Prof./Dr.] Yashodhara Haribhakta, COEP, M.Tech Data Science
+Guided by Dr. Yashodhara Haribhakta, COEP, M.Tech Data Science

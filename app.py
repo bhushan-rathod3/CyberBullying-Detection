@@ -3,7 +3,6 @@ import joblib
 
 app = Flask(__name__)
 
-# Load the pre-trained model ONCE when the server boots up (Instant load)
 MODEL_PATH = "model2.joblib"
 model = joblib.load(MODEL_PATH)
 
@@ -59,7 +58,6 @@ def predict_explain(text):
         "key_words": key_words
     }
 
-# HTML Template
 HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html lang="en">
